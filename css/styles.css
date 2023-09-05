@@ -198,6 +198,7 @@ box-shadow:
     justify-content: space-between;
     width: 232px;
     margin-left: 16px;
+    margin-top: 8px;
 }
 
 
@@ -359,11 +360,7 @@ ul {
 
 }
 
-.image {
-    width: 64px;
-    height: 64px;
-    
-}
+
 
 .features-image {
     background-color: var(--cloud);
