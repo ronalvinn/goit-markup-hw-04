@@ -184,6 +184,7 @@ box-shadow:
 }
 
 
+
 .team {
     background-color: var(--cloud);
 }
@@ -195,8 +196,8 @@ box-shadow:
 .team-icons{
     display: flex;
     justify-content: space-between;
-    background-color: var(--cloud);
-
+    width: 232px;
+    margin-left: 16px;
 }
 
 
@@ -285,6 +286,7 @@ ul {
     justify-content: space-between;
 }
 
+
 .container-header {
     display: flex;
     padding: 24px 15px;
@@ -303,7 +305,7 @@ ul {
     padding: 120px 0px;
 }
 
-.services{
+.services {
     padding-top: 0;
 }
 
@@ -337,7 +339,6 @@ ul {
 }
 
 .team-identity {
-
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -369,10 +370,8 @@ ul {
     border-radius: 4px;
     height: 112px;
     width: 264px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 8px;
+    
 }
 
 
@@ -389,12 +388,15 @@ ul {
 }
 
 
+
 .team-icons-link svg {
-    
     width: 16px;
     height: 16px;
     margin: 12px;
+    fill: var(--cloud);
 }
+
+
 
 .customers-logo-list {
     display: flex;
@@ -403,21 +405,33 @@ ul {
 }
 
 
-.customer-svg {
-    width: 168px;
-    height: 88px;
-    border: 1px solid var(--lightslate);
-    border-radius: 4px;
-    margin-left: 24px;
-}
-
 
 
 .social-media{
     color: var(--white);
 }
 
+.features-icons{
+    margin: 24px 100px;
+}
 
+.customers-logo-item{
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px; 
+    border: 1px solid var(--lightslate);
+    border-radius: 4px;
+    margin-left: 24px;
+}
+
+.customers-logo-item1 {
+
+        width: 168px;
+        height: 88px;
+        padding: -16px -32px;
+        margin-left: 24px;
+        
+}
 
 
 
