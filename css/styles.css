@@ -414,7 +414,7 @@ ul {
     color: var(--white);
     width: 96px;
     height: 24px;
-    margin: -110px 804px 188px 540px;
+    margin-bottom: 8px;
 }
 
 
@@ -430,8 +430,12 @@ ul {
 }
 
 
-.social-icons-list {
-    margin: -177px 804px 188px 540px;
+
+
+.footer-container {
+    display: flex;
+    gap: 120px;
+    
 }
 
 
