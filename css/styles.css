@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
 
-:root{
+:root {
     --iris: #4D5AE5;
     --ocean: #404BBF;
     --navyblue: #2E2F42;
@@ -25,7 +25,7 @@ body {
 
 }
 
- img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -50,15 +50,57 @@ body {
     letter-spacing: 0.32px;
 }
 
-.contact-item-link{
+.contact-item-link {
     font-style: normal;
 }
 
 
-.contact-item-link:hover, .header-item-link:hover {
+.contact-item-link:hover,
+.header-item-link:hover {
     color: var(--ocean);
 }
 
+
+
+.header-nav-item:hover .studio-link-item::before {
+    width: 48px;
+}
+
+.studio-link-item:before {
+    content: '';
+    background-color: var(--ocean);
+    height: 3px;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 46px;
+}
+
+.portfolio-link-item:before {
+    content: '';
+    background-color: var(--ocean);
+    height: 3px;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 46px;
+}
+
+
+.header-nav-item:hover .portfolio-link-item::before {
+    width: 66px;
+}
+
+.header-nav-item:hover .contacts-link-item::before {
+    width: 67px;
+}
+
+.contacts-link-item:before {
+    content: '';
+    background-color: var(--ocean);
+    height: 3px;
+    border-radius: 2px;
+    position: absolute;
+    margin-top: 46px;
+}
 
 .contact-item-link:active {
     color: var(--ocean);
@@ -94,7 +136,7 @@ body {
     background: var(--cloud);
     font-family: inherit;
     padding: 12px 24px;
-    
+
 }
 
 
@@ -106,9 +148,10 @@ body {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
-.hero-button{
+.hero-button {
     cursor: pointer;
 }
+
 .hero-button:hover {
     background-color: var(--ocean);
 }
@@ -135,11 +178,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 188px 0px; 
+    padding: 188px 0px;
     text-align: center;
 
 
-    
+
 }
 
 
@@ -167,6 +210,7 @@ body {
     letter-spacing: 0.4px;
     margin-bottom: 8px;
 }
+
 .team-item-role {
     color: var(--slate);
     font-size: 16px;
@@ -175,12 +219,12 @@ body {
 }
 
 .team-item {
-border-radius: 0px 0px 4px 4px;
-background: var(--white );
-box-shadow: 
-0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
-0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white);
+    box-shadow:
+        0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+        0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -189,11 +233,12 @@ box-shadow:
     background-color: var(--cloud);
 }
 
-.team-item-title, .team-item-role {
+.team-item-title,
+.team-item-role {
     text-align: center;
 }
 
-.team-icons{
+.team-icons {
     display: flex;
     justify-content: space-between;
     width: 232px;
@@ -273,7 +318,8 @@ ul {
     align-items: center;
 }
 
-.features-list, .services-list, 
+.features-list,
+.services-list,
 .team-list {
     display: flex;
     justify-content: space-between;
@@ -317,12 +363,13 @@ ul {
     gap: 24px;
 }
 
-.team-identity, .project-identity {
+.team-identity,
+.project-identity {
     background-color: var(--white);
     padding: 32px 0px;
 }
 
-.project-identity{
+.project-identity {
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -335,7 +382,7 @@ ul {
     border-radius: 0px 0px 4px 4px;
 }
 
-.portfolio-button-list{
+.portfolio-button-list {
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -360,12 +407,13 @@ ul {
     height: 112px;
     width: 264px;
     margin-bottom: 8px;
-    
+
 }
 
 
 
-.team-icons-link, .social-icons-list {
+.team-icons-link,
+.social-icons-list {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -395,19 +443,33 @@ ul {
 
 
 
-.features-icons{
+.features-icons {
     margin: 24px 100px;
 }
 
-.customers-logo-item{
+.customers-logo-item {
     width: 168px;
     height: 88px;
-    padding: 16px 32px; 
+    padding: 16px 32px;
     border: 1px solid var(--lightslate);
     border-radius: 4px;
     margin-left: 24px;
 }
 
+.customers-logo-item:hover .customers-logo-item-link{
+   color: var(--ocean);
+   border-color: var(--ocean);
+}
+
+.customers-logo-item-link {
+    color: var(--lightslate);  
+}
+
+.customer-svg {
+    width: 168px;
+    height: 88px;
+    fill: currentColor;
+}
 
 
 .social-media {
@@ -435,10 +497,9 @@ ul {
 .footer-container {
     display: flex;
     gap: 120px;
-    
+
 }
 
-
-
-
-
+.team-icons-link:hover {
+    background-color: #31D0AA;
+}
